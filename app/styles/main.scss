@@ -22,9 +22,55 @@ will be correctly compiled during `gulp serve` and `gulp`
 @import "src/material-design-lite";
 
 .mdl-grid {
-  max-width: 1200px;
+    max-width: 1200px;
+}
+
+.mdl-card__title {
+    padding-top: 30px;
 }
 
 .mdl-card__title-text {
-  padding-right: 30px;
+    padding-right: 30px;
+    align-self: auto;
+}
+
+@media (min-width: 768px) {
+
+    .mdl-card {
+        height: 300px;
+    }
+
+    .mdl-card__supporting-text {
+        height: 220px;
+        overflow-y: hidden;
+        margin-bottom: 10px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 55px;
+            height: 80px;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9) 70%, white);
+            display: block;
+        }
+    }
+
+    .mdl-card__actions {
+        min-height: 54px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .mdl-card__title-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mdl-card__title-text {
+        font-size: 24px;
+    }
 }
