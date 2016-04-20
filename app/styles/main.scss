@@ -27,6 +27,7 @@ will be correctly compiled during `gulp serve` and `gulp`
 
 .mdl-card__title {
     padding-top: 30px;
+    margin: 8px 0;
 }
 
 .mdl-card__title-text {
@@ -34,14 +35,38 @@ will be correctly compiled during `gulp serve` and `gulp`
     align-self: auto;
 }
 
+.mdl-card__blog-details {
+    padding: 8px 16px 0;
+    font-size: 14px;
+
+    span {
+        display: block;
+    }
+
+    .published i, .author_name i {
+        font-size: 20px;
+        margin-right: 4px;
+        position: relative;
+        top: 4px;
+    }
+
+    .author_name i {
+
+    }
+}
+
+.mdl-card__menu i {
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
 
     .mdl-card {
-        height: 300px;
+        height: 350px;
     }
 
     .mdl-card__supporting-text {
-        height: 220px;
+        height: 270px;
         overflow-y: hidden;
         margin-bottom: 10px;
 
