@@ -21,6 +21,8 @@ will be correctly compiled during `gulp serve` and `gulp`
 
 @import "src/material-design-lite";
 
+$light-color: #fff;
+
 .mdl-grid {
     max-width: 1200px;
 }
@@ -39,10 +41,6 @@ will be correctly compiled during `gulp serve` and `gulp`
     padding: 8px 16px 0;
     font-size: 14px;
 
-    span {
-        display: block;
-    }
-
     .published i, .author_name i {
         font-size: 20px;
         margin-right: 4px;
@@ -50,8 +48,8 @@ will be correctly compiled during `gulp serve` and `gulp`
         top: 4px;
     }
 
-    .author_name i {
-
+    .author_name {
+        margin-left: 10px;
     }
 }
 
@@ -59,10 +57,14 @@ will be correctly compiled during `gulp serve` and `gulp`
     font-size: 20px;
 }
 
+.post-share-btn {
+    color: $light-color;
+}
+
 @media (min-width: 768px) {
 
     .mdl-card {
-        height: 350px;
+        height: 600px;
     }
 
     .mdl-card__supporting-text {
