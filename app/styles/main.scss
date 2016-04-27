@@ -75,45 +75,13 @@ $light-color: #fff;
     color: $light-color;
 }
 
-.mdl-blog-post {
-    border-radius: $button-border-radius;
-    padding: 16px;
-
-    & h1 {
-        font-size: 22px;
-        margin: 0 0 10px;
-    }
-
-    & h2, & h3, & h4, & h5, & h6,  {
-        line-height: 1.3;
-        margin: 8px 0 4px;
-    }
-
-    & h2, & h3 {
-        font-size: 20px;
-        margin: 32px 0 4px;
-    }
-
-    & h3 {
-        font-size: 18px;
-    }
-
-    & h4 {
-        font-size: 16px;
-    }
-
-    & h5, & h6 {
-        font-size: 14px;
-    }
-
-    & img {
-        width: 100%;
-        height: auto;
-    }
-
-    & .lead {
-        color: $text-color-primary-lighter;
-    }
+.mdl-tweet-btn {
+    margin: 10px 0;
+    text-transform: none;
+    padding-left: 35px;
+    background: url('../images/social/twitter.svg') no-repeat;
+    background-size: 15px;
+    background-position: 10px center;
 }
 
 @media (min-width: 768px) {
@@ -154,5 +122,48 @@ $light-color: #fff;
 @media (min-width: 1200px) {
     .mdl-card__title-text {
         font-size: 24px;
+    }
+}
+
+// ============ Styles for post page ============
+
+.mdl-blog-post {
+    border-radius: $button-border-radius;
+    padding: 16px;
+
+    & h1 {
+        font-size: 22px;
+        margin: 0 0 10px;
+    }
+
+    & h2, & h3, & h4, & h5, & h6,  {
+        line-height: 1.3;
+        margin: 8px 0 4px;
+    }
+
+    & h2, & h3 {
+        font-size: 20px;
+        margin: 32px 0 4px;
+    }
+
+    & h3 {
+        font-size: 18px;
+    }
+
+    & h4 {
+        font-size: 16px;
+    }
+
+    & h5, & h6 {
+        font-size: 14px;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    & .lead {
+        color: $text-color-primary-lighter;
     }
 }
